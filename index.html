@@ -12,8 +12,23 @@
     <div style="text-align: center;">
         <img src="https://cdni.russiatoday.com/rbthmedia/images/2021.05/original/60b4cf1d85600a4427115b02.jpg" alt="cat" style="width: 50%;">
         <h1>เลี้ยงอาหารแมวของเรา</h1>
-        <button>ซื้ออาหารให้แมว</button>
+        <button onclick="openWindow()">ซื้ออาหารให้แมว</button>
     </div>
+
+    <script>
+        function openWindow() {
+            var newWindow = window.open("", "Thank You for Purchase!", "width=500, height=800");
+            newWindow.document.write(`
+            <div style="text-align: center;">
+                <img src="https://i.kym-cdn.com/photos/images/facebook/002/028/716/ef3.jpg" alt="cat" style="width: 100%;">
+                <h1>ขอบคุณที่เลี้ยงแมวของเรา</h1>
+                <p>ยอดชำระทั้งหมด 10 บาท</p>
+                <button>ชำระเงิน</button>
+                <button onclick="newWindow.close()">ยกเลิกรายการ</button>
+            </div>
+            `)
+        }
+    </script>
 </body>
 
 </html>
