@@ -2,33 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- JAVASCIPRT, BOOTSTRAP AND CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/index.css">
+  <script type="text/javascript" src="scripts/include.js"></script>
+  <!-- PAGE TITLE -->
+  <title>Farming Service</title>
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <img src="https://cdni.russiatoday.com/rbthmedia/images/2021.05/original/60b4cf1d85600a4427115b02.jpg" alt="cat" style="width: 50%;">
-        <h1>เลี้ยงอาหารแมวของเรา</h1>
-        <button onclick="openWindow()">ซื้ออาหารให้แมว</button>
-    </div>
+  <section>
+    <div data-include="components/navigation.html"></div>
+  </section>
 
-    <script>
-        function openWindow() {
-            var newWindow = window.open("", "Thank You for Purchase!", "width=500, height=800");
-            newWindow.document.write(`
-            <div style="text-align: center;">
-                <img src="https://i.kym-cdn.com/photos/images/facebook/002/028/716/ef3.jpg" alt="cat" style="width: 100%;">
-                <h1>ขอบคุณที่เลี้ยงแมวของเรา</h1>
-                <p>ยอดชำระทั้งหมด 10 บาท</p>
-                <button>ชำระเงิน</button>
-                <button onclick="newWindow.close()">ยกเลิกรายการ</button>
-            </div>
-            `)
-        }
-    </script>
+
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
